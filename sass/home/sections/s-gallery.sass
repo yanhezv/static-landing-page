@@ -1,0 +1,103 @@
+.s-gallery
+   display: flex
+   flex-direction: column
+   margin: 0 -2px 24px -2px
+
+.s-gallery__photo
+   position: relative
+   width: 100%
+   padding-top: 100%
+
+.s-gallery__container
+   position: absolute
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   overflow: hidden
+   display: flex
+   align-items: flex-end
+   justify-content: center
+
+.s-gallery__image
+   width: 100%
+   min-height: 100%
+
+.s-gallery__header
+   padding: 2px
+
+.s-gallery__info
+   background-color: $color-orange-40
+   padding: 16px
+   width: 100%
+   display: flex
+
+
+.s-gallery__message
+   width: calc( 100% - 64px )
+   color: $color-white
+   font-size: 20px
+   display: flex
+   flex-direction: column
+   margin-left: 16px
+
+.s-gallery__link
+   text-decoration: underline
+   margin-top: 8px
+
+.s-gallery__1,
+.s-gallery__2,
+.s-gallery__3
+   padding: 2px
+
+.s-gallery__4,
+.s-gallery__5
+   padding: 2px
+
+   .s-gallery__photo
+      padding-top: 30%
+
+   .s-gallery__image
+      height: 100%
+      min-width: 100%
+
+.s-gallery__second
+   display: flex
+   width: 100%
+
+.s-gallery__vertical
+   width: 33.3333%
+
+.s-gallery__3
+   width: 66.6666%
+
+@media screen and ( min-width: 480px )
+   .s-gallery__first
+      display: flex
+
+   .s-gallery__tertiary
+      width: 100%
+
+   .s-gallery__4,
+   .s-gallery__5
+      height: 50%
+
+      .s-gallery__photo
+         padding: 0
+         height: 100%
+
+@media screen and ( min-width: 800px )
+   .s-gallery
+      flex-direction: row
+      align-items: stretch
+
+   .s-gallery__header
+      width: 250px
+
+   .s-gallery__info
+      height: 100%
+      align-items: flex-end
+
+   .s-gallery__first
+      width: calc( 100% - 250px )
+

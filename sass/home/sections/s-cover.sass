@@ -1,0 +1,41 @@
+// .s-cover
+// .s-cover__main
+.s-cover__aside
+   padding: 12px
+
+.s-cover__aside-first
+   width: 100%
+   margin-bottom: 20px
+
+.s-cover__aside-second
+   width: 100%
+
+@media screen and ( min-width: $breakpoint-sm )
+   .s-cover__aside
+      display: flex
+
+   .s-cover__aside-first
+      margin-bottom: 0
+      margin-right: 16px
+
+@media screen and ( min-width: $breakpoint-md )
+   .s-cover
+      padding: 16px
+      display: flex
+      justify-content: space-between
+
+   .s-cover__main
+      width: calc( 100% - 280px )
+
+   .s-cover__aside
+      width: 260px
+      flex-direction: column
+      padding: 0
+
+   .s-cover__aside-first
+      margin-bottom: 20px
+      margin-right: 0
+
+@media screen and ( min-width: $breakpoint-lg )
+   .s-cover
+      padding: 16px 0

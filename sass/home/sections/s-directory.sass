@@ -1,0 +1,46 @@
+.s-directory
+   box-shadow: 0px 3px 6px $color-gray-10
+   border-radius: 16px
+   overflow: hidden
+
+.s-directory__header
+   background-color: $color-blue-50
+   display: flex
+   align-items: center
+   color: $color-white
+
+.s-directory__icon
+   padding: 8px 16px
+   background-color: $color-orange-50
+
+.s-directory__title
+   padding: 8px 12px
+   font-size: 20px
+
+.s-directory__items
+   padding: 0px 16px
+
+.s-directory__item
+   position: relative
+   &::after
+      content: ""
+      display: block
+      width: 100%
+      height: 1px
+      background-color: $color-gray-20
+      position: absolute
+      top: 100%
+      right: 0
+
+   &:last-child
+      &::after
+         content: none
+
+.s-directory__element
+   padding: 8px 0
+   display: flex
+   align-items: center
+
+.s-directory__name
+   margin-left: 12px
+   width: calc( 100% - 64px )

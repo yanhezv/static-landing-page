@@ -1,0 +1,48 @@
+// .s-services
+.s-services__items
+   display: flex
+   flex-wrap: wrap
+
+.s-services__item
+   width: 50%
+
+.s-service__info
+   width: 100%
+   padding-top: 90%
+   position: relative
+
+.s-services__container
+   position: absolute
+   left: 0
+   top: 0
+   overflow: hidden
+   display: flex
+   align-items: center
+   justify-content: flex-end
+   width: 100%
+   height: 100%
+   border: 2px solid $color-white
+
+.s-services__image
+   width: 100%
+   min-height: 100%
+
+.s-service__message
+   position: absolute
+   bottom: 0
+   left: 0
+   color: $color-white
+   padding: 8px 10%
+   height: 36%
+
+@media screen and ( min-width: 480px )
+   .s-services__item
+      width: 33.3333%
+
+@media screen and ( min-width: $breakpoint-sm )
+   .s-services__item
+      width: 25%
+
+@media screen and ( min-width: 768px )
+   .s-services__item
+      width: 20%

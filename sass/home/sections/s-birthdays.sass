@@ -1,0 +1,52 @@
+.s-birthdays
+   box-shadow: 0px 3px 6px $color-gray-10
+   border-radius: 16px
+   overflow: hidden
+
+.s-birthdays__header
+   display: flex
+   align-items: center
+   color: $color-white
+   position: relative
+   &::after
+      content: ""
+      display: block
+      width: calc( 100% - 32px )
+      height: 1px
+      background-color: $color-gray-20
+      position: absolute
+      top: 100%
+      right: 16px
+
+.s-birthdays__icon
+   padding: 8px 20px
+
+.s-birthdays__title
+   padding: 8px 12px
+   font-size: 20px
+   color: $color-orange-50
+   line-height: 1
+
+.s-birthdays__items
+   padding: 0 16px
+
+// .s-birthdays__item
+
+.s-birthdays__element
+   padding: 8px 0
+   display: flex
+   align-items: center
+
+.s-birthdays__info
+   width: calc( 100% - 64px )
+   display: flex
+   flex-direction: column
+
+.s-birthdays__name
+   margin-left: 12px
+   font-size: 18px
+   color: $color-orange-40
+
+.s-birthdays__age
+   margin-left: 12px
+   color: $color-blue-50

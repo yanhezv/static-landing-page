@@ -1,0 +1,90 @@
+.s-toolbar
+   background-image: url("/img/backgrounds/toolbar.svg")
+   background-size: cover
+   padding: 16px 12px
+
+.s-toolbar__container
+   display: flex
+   flex-direction: column-reverse
+
+.s-toolbar__searcher
+   position: relative
+
+.s-toolbar__icon
+   position: absolute
+   left: 8px
+   top: calc( 50% - 12px )
+
+.s-toolbar__input
+   width: 100%
+   border: none
+   background-color: $color-white
+   padding: 4px 20px 4px 40px
+   border-radius: 30px
+   height: 42px
+   outline: none
+
+.s-toolbar__accounts
+   display: flex
+   justify-content: space-between
+   align-items: center
+   margin-bottom: 16px
+
+.s-toolbar__items
+   display: flex
+   justify-content: center
+   align-items: center
+
+.s-toolbar__username
+   color: $color-white
+   display: flex
+   justify-items: center
+   font-size: 16px
+   position: relative
+   padding-right: 16px
+   font-weight: bold
+   text-align: right
+   margin-right: 8px
+   margin-left: 8px
+   &::after
+      content: ""
+      display: block
+      width: 0
+      height: 0
+      border-left: 5px solid transparent
+      border-right: 5px solid transparent
+      border-top: 8px solid $color-white
+      position: absolute
+      top: calc( 50% - 3px )
+      right: 0
+
+@media screen and ( min-width: 480px )
+   .s-toolbar__accounts
+      justify-content: flex-end
+
+@media screen and ( min-width: $breakpoint-sm )
+   .s-toolbar
+      padding: 16px
+
+   .s-toolbar__container
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+   .s-toolbar__searcher
+      width: calc( 100% - 320px )
+      max-width: 300px
+      margin-right: 16px
+
+   .s-toolbar__accounts
+      margin-bottom: 0
+
+@media screen and ( min-width: $breakpoint-md )
+   .s-toolbar__container
+      justify-content: flex-end
+
+   .s-toolbar__searcher
+      margin-right: 24px
+
+   .s-toolbar__username
+      margin: 0 24px

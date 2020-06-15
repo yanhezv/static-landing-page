@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUij_4Mfx628fTGZO1lxxm7wxIWHeX_YA&callback=initMap&libraries=&v=weekly"
+        defer></script>
+</head>
+<body>
+    <section class="s-toolbar">
+        <div class="e-max-width s-toolbar__container">
+            <div class="s-toolbar__searcher">
+                <label
+                    for   = "input-search"
+                    class = "e-icon e-icon-3x s-toolbar__icon"
+                >
+                    <img
+                        src   = "img//icons/search.svg"
+                        class = "e-full-width"
+                        alt   = "Buscar"
+                    >
+                </label>
+                <input
+                    type        = "text"
+                    class       = "s-toolbar__input"
+                    id          = "input-search"
+                    placeholder = "¿Qué estas buscando?"
+                >
+            </div>
+            <div class="s-toolbar__accounts">
+                <div class="s-toolbar__items">
+                    <a
+                        href="https://www.instagram.com/"
+                        class="e-icon e-icon-6x"
+                    >
+                        <img src="img/icons/instagran.svg" alt="Instagran">
+                    </a>
+                    <a
+                        href="https://www.facebook.com/"
+                        class="e-icon e-icon-6x"
+                    >
+                        <img src="img/icons/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+                <div class="s-toolbar__items">
+                    <a
+                        href  = "#"
+                        class = "s-toolbar__username"
+                    >
+                        Julieta Ortega
+                    </a>
+                    <figure class="e-icon e-icon-9x">
+                        <img
+                            src    = "img/photo/profile-1-1x.png"
+                            class  = "e-full-width"
+                            alt    = "Foto"
+                            srcset = "
+                                img/photo/profile-1-2x.png 2x,
+                                img/photo/profile-1-1x.png 1x
+                            "
+                        >
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="e-max-width s-navigation">
+        <nav class="s-navigation__panel">
+            <ul class="s-navigation__menu">
+                <li class="s-navigation__menu-item s-navigation__menu-item--active">
+                    <a href="#" class="s-navigation__link">Home</a>
+                </li>
+                <li class="s-navigation__menu-item">
+                    <a href="#" class="s-navigation__link">Calendario</a>
+                </li>
+                <li class="s-navigation__menu-item">
+                    <a href="#" class="s-navigation__link">Partners</a>
+                </li>
+                <li class="s-navigation__menu-item">
+                    <a href="#" class="s-navigation__link">E-Learning</a>
+                </li>
+                <li class="s-navigation__menu-item">
+                    <a href="#" class="s-navigation__link">Material Informático</a>
+                </li>
+                <li class="s-navigation__menu-item">
+                    <a href="#" class="s-navigation__link">Otros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="s-navigation__visits">
+            <figure class="e-icon e-icon-9x s-navigation__icon">
+                <img src="img/icons/people.svg" class="e-full-width" alt="Icono">
+            </figure>
+            <div class="s-navigation__visits-info">
+                <span class="s-navigation__number">53948</span>
+                <span class="s-navigation__text">Visitas</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="e-max-width e-mb-lg">
+
+        <div class="s-cover e-mb-xl">
+            <div class="s-cover__main">
+                <section class="swiper-container s-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="s-slider__item">
+                                <figure class="s-slider__image-container">
+                                    <img
+                                        src    = "img/photo/slider-1x.png"
+                                        class  = "s-slider__image"
+                                        alt    = "Foto"
+                                        srcset = "
+                                            img/photo/slider-2x.png 2x,
+                                            img/photo/slider-1x.png 1x
+                                        "
+                                    >
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="s-slider__item">
+                                <figure class="s-slider__image-container">
+                                    <img
+                                        src    = "img/photo/slider-1x.png"
+                                        class  = "e-full-width"
+                                        alt    = "Foto"
+                                        srcset = "
+                                            img/photo/slider-2x.png 2x,
+                                            img/photo/slider-1x.png 1x
+                                        "
+                                    >
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="s-slider__item">
+                                <figure class="s-slider__image-container">
+                                    <img
+                                        src    = "img/photo/slider-1x.png"
+                                        class  = "e-full-width"
+                                        alt    = "Foto"
+                                        srcset = "
+                                            img/photo/slider-2x.png 2x,
+                                            img/photo/slider-1x.png 1x
+                                        "
+                                    >
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="s-slider__item">
+                                <figure class="s-slider__image-container">
+                                    <img
+                                        src    = "img/photo/slider-1x.png"
+                                        class  = "e-full-width"
+                                        alt    = "Foto"
+                                        srcset = "
+                                            img/photo/slider-2x.png 2x,
+                                            img/photo/slider-1x.png 1x
+                                        "
+                                    >
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination s-slider__pagination"></div>
+
+                    <div class="swiper-button-prev s-slider__nav"></div>
+                    <div class="swiper-button-next s-slider__nav"></div>
+
+                </section>
+                <section class="s-services e-mt-md">
+                    <ul class="s-services__items">
+                        <li class="s-services__item">
+                            <div class="s-service__info">
+                                <figure class="s-services__container">
+                                    <img
+                                        src   = "img/backgrounds/item-1.svg"
+                                        alt   = "Oportunidad"
+                                        class = "s-services__image"
+                                    >
+                                </figure>
+                                <div class="s-service__message">
+                                    <span>Oportunidad de Desarrollo</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="s-services__item">
+                            <div class="s-service__info">
+                                <figure class="s-services__container">
+                                    <img
+                                        src   = "img/backgrounds/item-2.svg"
+                                        alt   = "Oportunidad"
+                                        class = "s-services__image"
+                                    >
+                                </figure>
+                                <div class="s-service__message">
+                                    <span>En Directo</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="s-services__item">
+                            <div class="s-service__info">
+                                <figure class="s-services__container">
+                                    <img
+                                        src   = "img/backgrounds/item-3.svg"
+                                        alt   = "Oportunidad"
+                                        class = "s-services__image"
+                                    >
+                                </figure>
+                                <div class="s-service__message">
+                                    <span>Biométricos</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="s-services__item">
+                            <div class="s-service__info">
+                                <figure class="s-services__container">
+                                    <img
+                                        src   = "img/backgrounds/item-1.svg"
+                                        alt   = "Oportunidad"
+                                        class = "s-services__image"
+                                    >
+                                </figure>
+                                <div class="s-service__message">
+                                    <span>Programación SUM</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="s-services__item">
+                            <div class="s-service__info">
+                                <figure class="s-services__container">
+                                    <img
+                                        src   = "img/backgrounds/item-5.svg"
+                                        alt   = "Oportunidad"
+                                        class = "s-services__image"
+                                    >
+                                </figure>
+                                <div class="s-service__message">
+                                    <span>Seguridad y Salud laboral</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="s-cover__aside">
+                <section class="s-directory s-cover__aside-first">
+                    <header class="s-directory__header">
+                        <div class="s-directory__icon">
+                            <figure class="e-icon e-icon-6x">
+                                <img src="img/icons/folder.svg" class="e-full-width" alt="Directorio">
+                            </figure>
+                        </div>
+                        <div class="s-directory__title">
+                            <span>Directorio</span>
+                        </div>
+                    </header>
+                    <ul class="s-directory__items">
+                        <li class="s-directory__item">
+                            <div class="s-directory__element">
+                                <figure class="e-icon e-icon-6x">
+                                    <img src="img/icons/brain.svg"  class="e-full-width" alt="Numeros">
+                                </figure>
+                                <span class="s-directory__name">Números</span>
+                            </div>
+                        </li>
+                        <li class="s-directory__item">
+                            <div class="s-directory__element">
+                                <figure class="e-icon e-icon-6x">
+                                    <img src="img/icons/about-us.svg" class="e-full-width" alt="Numeros">
+                                </figure>
+                                <span class="s-directory__name">¿Quiénes Somos?</span>
+                            </div>
+                        </li>
+                        <li class="s-directory__item">
+                            <div class="s-directory__element">
+                                <figure class="e-icon e-icon-6x">
+                                    <img src="img/icons/brain.svg"  class="e-full-width" alt="Numeros">
+                                </figure>
+                                <span class="s-directory__name">SIG Normas y Procedimientos</span>
+                            </div>
+                        </li>
+                        <li class="s-directory__item">
+                            <div class="s-directory__element">
+                                <figure class="e-icon e-icon-6x">
+                                    <img src="img/icons/about-us.svg" class="e-full-width" alt="Numeros">
+                                </figure>
+                                <span class="s-directory__name">Beneficios</span>
+                            </div>
+                        </li>
+                        <li class="s-directory__item">
+                            <div class="s-directory__element">
+                                <figure class="e-icon e-icon-6x">
+                                    <img src="img/icons/brain.svg" class="e-full-width" alt="Numeros">
+                                </figure>
+                                <span class="s-directory__name">Convenios Educativos</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="s-birthdays s-cover__aside-second">
+                    <header class="s-birthdays__header">
+                        <div class="s-birthdays__icon">
+                            <figure class="e-icon e-icon-6x">
+                                <img src="img/icons/birthday.svg" class="e-full-width" alt="Icono">
+                            </figure>
+                        </div>
+                        <div class="s-birthdays__title">
+                            <span>Hoy de Cumpleaños</span>
+                        </div>
+                    </header>
+                    <ul class="s-birthdays__items">
+                        <li class="s-birthdays__item">
+                            <div class="s-birthdays__element">
+                                <figure class="e-icon e-icon-8x">
+                                    <img src="img/photo/profile-2-1x.png"  class="e-full-width" alt="Foto">
+                                </figure>
+                                <div class="s-birthdays__info">
+                                    <span class="s-birthdays__name">Catarina Macht</span>
+                                    <span class="s-birthdays__age">24 años</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s-birthdays__item">
+                            <div class="s-birthdays__element">
+                                <figure class="e-icon e-icon-8x">
+                                    <img src="img/photo/profile-3-1x.png" class="e-full-width" alt="Foto">
+                                </figure>
+                                <div class="s-birthdays__info">
+                                    <span class="s-birthdays__name">Elmer Pérez</span>
+                                    <span class="s-birthdays__age">24 años</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s-birthdays__item">
+                            <div class="s-birthdays__element">
+                                <figure class="e-icon e-icon-8x">
+                                    <img src="img/photo/profile-4-1x.png"  class="e-full-width" alt="Foto">
+                                </figure>
+                                <div class="s-birthdays__info">
+                                    <span class="s-birthdays__name">Dora Palao</span>
+                                    <span class="s-birthdays__age">24 años</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="s-about">
+            <h1 class="s-about__title e-mb-xl">¿Quiénes somos?</h1>
+            <p class="s-about__message">Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il
+            testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li
+            assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla
+            videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei
+            fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di
+            impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
+        </div>
+
+        <section class="s-gallery">
+            <div class="s-gallery__header">
+                <div class="s-gallery__info">
+                    <figure class="e-icon e-icon-8x">
+                        <img src="img/icons/gallery.svg" alt="Oportunidad" class="s-gallery__image">
+                    </figure>
+                    <div class="s-gallery__message">
+                        <span>Galería de imágenes</span>
+                        <a href="#" class="s-gallery__link">Ver completa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="s-gallery__first">
+                <div class="s-gallery__second">
+                    <div class="s-gallery__vertical">
+                        <div class="s-gallery__1">
+                            <div class="s-gallery__photo">
+                                <figure class="s-gallery__container">
+                                    <img src="img/photo/gallery-1-1x.png" alt="Imagen" class="s-gallery__image">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="s-gallery__2">
+                            <div class="s-gallery__photo">
+                                <figure class="s-gallery__container">
+                                    <img src="img/photo/gallery-2-1x.png" alt="Imagen" class="s-gallery__image">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-gallery__3">
+                        <div class="s-gallery__photo">
+                            <figure class="s-gallery__container">
+                                <img src="img/photo/gallery-3-1x.png" alt="Imagen" class="s-gallery__image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-gallery__tertiary">
+                    <div class="s-gallery__4">
+                        <div class="s-gallery__photo">
+                            <figure class="s-gallery__container">
+                                <img src="img/photo/gallery-4-1x.png" alt="Imagen" class="s-gallery__image">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="s-gallery__5">
+                        <div class="s-gallery__photo">
+                            <figure class="s-gallery__container">
+                                <img src="img/photo/gallery-5-1x.png" alt="Imagen" class="s-gallery__image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-branch-offices">
+            <div class="s-branch-offices__card">
+                <div class="s-branch-offices__panel">
+                    <header class="s-branch-offices__header">
+                        <div class="s-branch-offices__icon">
+                            <figure class="e-icon e-icon-6x">
+                                <img src="img/icons/folder.svg" class="e-full-width" alt="Icono">
+                            </figure>
+                        </div>
+                        <div class="s-branch-offices__title">
+                            <span>Sucursales</span>
+                        </div>
+                    </header>
+                    <ul class="s-branch-offices__info">
+                        <li class="s-branch-offices__address">
+                            <span class="s-branch-offices__name">Campus La Molina</span>
+                            <span>La Molina 190, Ate, Lima Perú.</span>
+                        </li>
+                        <li class="s-branch-offices__address">
+                            <span class="s-branch-offices__name">Campus Callao</span>
+                            <span>Avenida Maquinarias 6015, Carmen de la Legua, Callao Perú </span>
+                        </li>
+                        <li class="s-branch-offices__address">
+                            <span class="s-branch-offices__name">Centro Trujillo</span>
+                            <span>Jirón Grau 400 Centro Comercial Boulevard 3er piso, Trujillo Perú </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="s-branch-offices__map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+
+    <script>
+        function initMap() {
+            var CampusMolina = { lat: -12.0571145, lng: -76.9660208 };
+
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 16, center: CampusMolina }
+            );
+
+            var marker = new google.maps.Marker({ position: CampusMolina, map: map });
+        }
+    </script>
+
+</body>
+</html>
