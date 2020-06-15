@@ -21,3 +21,9 @@ sass sass/home/index.sass css/home.css
 sass --watch sass/home/index.sass css/home.css
 
 ```
+
+## Notas extras
+
+1. Se ha usado la metodología BEM para el nombramiento de las Clases de CSS en SASS
+2. Se ha importado fuentes de manera estática
+
